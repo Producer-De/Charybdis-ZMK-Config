@@ -2,6 +2,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     tapping-term-ms = <200>;
@@ -17,6 +18,21 @@
             bindings = <&kp ESC>;
             key-positions = <17 18>;
             layers = <0>;
+        };
+
+        questionmark {
+            bindings = <&kp QUESTION>;
+            key-positions = <28 47>;
+        };
+
+        comma {
+            bindings = <&kp COMMA>;
+            key-positions = <28 46>;
+        };
+
+        dot {
+            bindings = <&kp DOT>;
+            key-positions = <28 45>;
         };
     };
 
