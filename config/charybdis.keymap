@@ -2,6 +2,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     tapping-term-ms = <200>;
@@ -96,6 +97,31 @@
         window {
             bindings = <&kp LEFT_WIN>;
             key-positions = <36 52>;
+        };
+
+        slash {
+            bindings = <&kp SLASH>;
+            key-positions = <16 47>;
+        };
+
+        colon {
+            bindings = <&kp COLON>;
+            key-positions = <35 16>;
+        };
+
+        underscore {
+            bindings = <&kp UNDER>;
+            key-positions = <28 30>;
+        };
+
+        quote {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <28 31>;
+        };
+
+        doublequote {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <28 32>;
         };
     };
 
