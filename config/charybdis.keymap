@@ -2,6 +2,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     tapping-term-ms = <200>;
@@ -205,6 +206,17 @@
 &kp A   &trans  &mkp RCLK  &trans     &mkp LCLK  &trans       &trans     &mkp LCLK  &trans     &mkp RCLK  &trans  &trans
                            &trans     &mkp LCLK  &mkp RCLK    &mkp RCLK  &mkp LCLK
                                       &trans     &trans       &trans
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&mt LEFT_WIN ESCAPE      &mt LS(LCTRL) NUMBER_1  &mt LS(LEFT_ALT) NUMBER_2   &mt LS(LEFT_WIN) NUMBER_3  &mt LC(LEFT_ALT) NUMBER_4   &mt LC(LEFT_WIN) N5           &mt LA(LEFT_WIN) NUMBER_6       &mt LS(LC(LEFT_ALT)) N7  &mt LS(LC(LEFT_WIN)) N8  &mt LS(LA(LEFT_WIN)) N9  &mt LC(LA(LEFT_WIN)) N0  &mt LS(LC(LA(LEFT_WIN))) TAB
+&kp LEFT_ALT             &trans                  &trans                      &trans                     &trans                      &kp LC(LA(T))                 &trans                          &trans                   &trans                   &trans                   &kp LC(P)                &trans
+&kp LCTRL                &trans                  &trans                      &trans                     &trans                      &trans                        &trans                          &trans                   &trans                   &trans                   &trans                   &trans
+&mt LEFT_SHIFT NUMBER_1  &mt LS(LCTRL) Z         &mt LS(LEFT_ALT) LC(LA(X))  &mt LS(LEFT_WIN) LC(C)     &mt LS(LC(LEFT_ALT)) LC(V)  &mt LS(LC(LEFT_WIN)) LA(B)    &mt LS(LA(LEFT_WIN)) LC(LA(N))  &kp LC(M)                &trans                   &trans                   &trans                   &trans
+                                                                             &trans                     &trans                      &trans                        &trans                          &trans
+                                                                                                        &trans                      &trans                        &trans
             >;
         };
     };
