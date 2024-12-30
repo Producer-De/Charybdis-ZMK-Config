@@ -145,12 +145,12 @@
 
         layer_7 {
             bindings = <
-&mt LEFT_WIN ESCAPE    &kp NUMBER_1         &kp NUMBER_2        &kp NUMBER_3            &kp LA(F4)  &kp F5                    &kp NUMBER_6                &kp N7                      &kp N8                     &kp N9                         &kp N0                      &mt LS(LC(LA(LEFT_WIN))) TAB
-&mt LEFT_ALT LA(TAB)   &trans               &trans              &kp LS(E)               &kp LA(R)   &kp LC(LA(T))             &trans                      &trans                      &trans                     &trans                         &kp LC(P)                   &mt LEFT_ALT MINUS
-&mt LCTRL RIGHT_ALT    &kp LC(A)            &mt LC(LEFT_ALT) S  &kp LS(LEFT_ALT)        &kp LC(F)   &trans                    &trans                      &trans                      &trans                     &mt LS(LA(LEFT_WIN)) UP_ARROW  &to 6                       &mt LCTRL BACKSPACE
-&mt LEFT_SHIFT DELETE  &mt LS(LCTRL) LC(Z)  &kp LC(LA(X))       &mt LS(LEFT_WIN) LC(C)  &kp LC(V)   &mt LC(LEFT_WIN) LA(B)    &mt LA(LEFT_WIN) LC(LA(N))  &mt LC(LS(LEFT_ALT)) LC(M)  &mt LS(LC(LEFT_WIN)) LEFT  &lt 4 DOWN                     &mt LC(LA(LEFT_WIN)) RIGHT  &mt LEFT_SHIFT RIGHT
-                                                                &kp BACKSPACE           &mkp LCLK   &mkp RCLK                 &to 6                       &kp SPACE
-                                                                                        &kp ENTER   &kp SPACE                 &kp ENTER
+&mt LEFT_WIN ESCAPE            &kp LS(LCTRL)  &kp LS(LEFT_ALT)  &kp LS(LEFT_WIN)            &kp LC(LEFT_ALT)  &kp LC(LEFT_WIN)          &kp LA(LEFT_WIN)            &kp LS(LC(LEFT_ALT))        &kp LS(LC(LEFT_WIN))       &kp LS(LA(LEFT_WIN))           &kp LC(LA(LEFT_WIN))        &mt LS(LC(LA(LEFT_WIN))) TAB
+&mt LEFT_ALT LA(TAB)           &kp LA(F4)     &kp LC(W)         &kp LS(E)                   &kp LA(R)         &kp LC(LA(T))             &trans                      &trans                      &trans                     &kp LC(O)                      &kp LC(P)                   &mt LEFT_ALT MINUS
+&mt LCTRL RIGHT_ALT            &kp LC(A)      &kp S             &kp LC(LS(C))               &kp LC(F)         &kp LS(F)                 &trans                      &kp M                       &trans                     &mt LS(LA(LEFT_WIN)) UP_ARROW  &to 6                       &kp BACKSPACE
+&mt LC(LS(LEFT_SHIFT)) DELETE  &kp LC(Z)      &kp LC(LA(X))     &mt LS(LEFT_WIN) LC(C)      &kp LC(V)         &mt LC(LEFT_WIN) LA(B)    &mt LA(LEFT_WIN) LC(LA(N))  &mt LC(LS(LEFT_ALT)) LC(M)  &mt LS(LC(LEFT_WIN)) LEFT  &lt 4 DOWN                     &mt LC(LA(LEFT_WIN)) RIGHT  &mt LEFT_SHIFT RIGHT
+                                                                &mt LC(LEFT_ALT) BACKSPACE  &mkp LCLK         &mkp RCLK                 &kp LEFT_WIN                &kp SPACE
+                                                                                            &kp ENTER         &kp SPACE                 &kp ENTER
             >;
         };
 
@@ -217,17 +217,6 @@
 &mt LEFT_SHIFT DEL    &lt 3 Z       &kp X   &kp C                       &kp V                   &kp B                     &kp N                           &kp M                       &mt LA(LEFT_WIN) PLUS  &kp LEFT  &mt LS(LC(LEFT_ALT)) DOWN  &mt LEFT_SHIFT RIGHT
                                             &mt LC(LEFT_ALT) BACKSPACE  &mkp LCLK               &mkp RCLK                 &mt LS(LA(LEFT_WIN)) PERIOD     &mt LC(LA(LEFT_WIN)) SPACE
                                                                         &mt LS(LEFT_ALT) ENTER  &mt LC(LEFT_ALT) SPACE    &mt LS(LC(LA(LEFT_WIN))) ENTER
-            >;
-        };
-
-        layer_8 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
-                                &trans  &trans    &trans
             >;
         };
     };
