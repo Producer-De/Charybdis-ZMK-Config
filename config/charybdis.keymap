@@ -145,12 +145,12 @@
 
         layer_7 {
             bindings = <
-&mt LEFT_WIN ESCAPE            &kp LS(LCTRL)  &kp LS(LEFT_ALT)  &kp LS(LEFT_WIN)            &kp LC(LEFT_ALT)  &kp LC(LEFT_WIN)          &kp LA(LEFT_WIN)            &kp LS(LC(LEFT_ALT))        &kp LS(LC(LEFT_WIN))       &kp LS(LA(LEFT_WIN))           &kp LC(LA(LEFT_WIN))        &mt LS(LC(LA(LEFT_WIN))) TAB
-&mt LEFT_ALT LA(TAB)           &kp LA(F4)     &kp LC(W)         &kp LS(E)                   &kp LA(R)         &kp LC(LA(T))             &trans                      &trans                      &trans                     &kp LC(O)                      &kp LC(P)                   &mt LEFT_ALT MINUS
-&mt LCTRL RIGHT_ALT            &kp LC(A)      &kp S             &kp LC(LS(C))               &kp LC(F)         &kp LS(F)                 &trans                      &kp M                       &trans                     &mt LS(LA(LEFT_WIN)) UP_ARROW  &to 6                       &kp BACKSPACE
-&mt LC(LS(LEFT_SHIFT)) DELETE  &kp LC(Z)      &kp LC(LA(X))     &mt LS(LEFT_WIN) LC(C)      &kp LC(V)         &mt LC(LEFT_WIN) LA(B)    &mt LA(LEFT_WIN) LC(LA(N))  &mt LC(LS(LEFT_ALT)) LC(M)  &mt LS(LC(LEFT_WIN)) LEFT  &lt 4 DOWN                     &mt LC(LA(LEFT_WIN)) RIGHT  &mt LEFT_SHIFT RIGHT
-                                                                &mt LC(LEFT_ALT) BACKSPACE  &mkp LCLK         &mkp RCLK                 &kp LEFT_WIN                &kp SPACE
-                                                                                            &kp ENTER         &kp SPACE                 &kp ENTER
+&kp ESCAPE             &kp LS(LCTRL)  &kp LS(LEFT_ALT)  &kp LS(LEFT_WIN)            &kp LC(LEFT_ALT)  &kp LC(LEFT_WIN)          &kp LA(LEFT_WIN)  &kp LS(LC(LEFT_ALT))  &kp LS(LC(LEFT_WIN))  &kp LS(LA(LEFT_WIN))  &kp LC(LA(LEFT_WIN))  &kp LS(LC(LA(LEFT_WIN)))
+&mt LEFT_ALT LA(TAB)   &kp LA(F4)     &kp LC(W)         &kp LS(E)                   &kp LA(R)         &kp LC(LA(T))             &kp V             &kp P                 &kp M                 &kp LC(O)             &kp LC(P)             &mt CAPS TAB
+&mt LCTRL RIGHT_ALT    &kp LC(A)      &kp S             &kp LC(LS(C))               &kp LC(F)         &kp LS(F)                 &kp LC(LA(G))     &kp F2                &kp QUESTION          &kp UP_ARROW          &to 6                 &kp BACKSPACE
+&mt LEFT_SHIFT DELETE  &kp LC(Z)      &kp LC(LA(X))     &mt LS(LEFT_WIN) LC(C)      &kp LC(V)         &mt LC(LEFT_WIN) LA(B)    &kp LC(LA(N))     &kp LC(M)             &kp LEFT              &lt 4 DOWN            &kp RIGHT             &kp LEFT_SHIFT
+                                                        &mt LC(LEFT_ALT) BACKSPACE  &mkp LCLK         &mkp RCLK                 &kp LEFT_WIN      &kp SPACE
+                                                                                    &kp ENTER         &kp SPACE                 &kp ENTER
             >;
         };
 
@@ -211,7 +211,7 @@
 
         layer_6 {
             bindings = <
-&mt LS(LCTRL) ESCAPE  &kp NUMBER_1  &kp N2  &kp NUMBER_3                &kp NUMBER_4            &kp N5                    &kp NUMBER_6                    &kp N7                      &kp N8                 &kp N9    &kp N0                     &to 0
+&kp LS(ESCAPE)        &kp NUMBER_1  &kp N2  &kp NUMBER_3                &kp NUMBER_4            &kp N5                    &kp NUMBER_6                    &kp N7                      &kp N8                 &kp N9    &kp N0                     &to 0
 &mt LEFT_ALT LA(TAB)  &kp Q         &kp W   &kp E                       &kp R                   &kp T                     &kp Y                           &kp U                       &kp I                  &kp O     &kp P                      &mt LS(LEFT_WIN) MINUS
 &mt LCTRL RIGHT_ALT   &kp A         &kp S   &kp D                       &kp F                   &kp G                     &kp H                           &kp J                       &kp K                  &kp L     &to 0                      &mt LS(LC(LEFT_WIN)) BACKSPACE
 &mt LEFT_SHIFT DEL    &lt 3 Z       &kp X   &kp C                       &kp V                   &kp B                     &kp N                           &kp M                       &mt LA(LEFT_WIN) PLUS  &kp LEFT  &mt LS(LC(LEFT_ALT)) DOWN  &mt LEFT_SHIFT RIGHT
