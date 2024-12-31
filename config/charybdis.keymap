@@ -2,6 +2,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     tapping-term-ms = <200>;
@@ -150,9 +151,9 @@
         layer_7 {
             bindings = <
 &mt LC(LA(F)) ESCAPE   &mt LS(LCTRL) LA(R)  &mt LS(LEFT_ALT) LC(T)  &mt LS(LEFT_WIN) LC(LA(V))  &mt LC(LEFT_ALT) LC(LA(R))  &mt LC(LEFT_WIN) LC(B)    &mt LA(LEFT_WIN) V  &mt LS(LC(LEFT_ALT)) P  &mt LS(LC(LEFT_WIN)) LC(LA(M))  &mt LS(LA(LEFT_WIN)) LA(G)  &mt LC(LA(LEFT_WIN)) LA(S)  &mt LS(LC(LA(LEFT_WIN))) LA(X)
-&mt LEFT_ALT LA(TAB)   &kp LA(F4)           &kp LC(D)               &kp LS(E)                   &kp R                       &kp LC(LA(T))             &kp G               &kp U                   &kp M                           &kp LC(O)                   &kp LC(P)                   &mt CAPS LC(LA(P))
+&mt LEFT_ALT LA(TAB)   &kp LA(F4)           &kp LC(D)               &kp LS(E)                   &kp R                       &kp LC(LA(T))             &kp G               &kp U                   &kp I                           &kp LC(O)                   &kp LC(P)                   &mt CAPS LC(LA(P))
 &mt LCTRL RIGHT_ALT    &kp LC(A)            &kp S                   &kp LC(LS(C))               &kp LC(F)                   &kp LS(F)                 &kp LC(LA(G))       &kp F2                  &kp QUESTION                    &kp UP_ARROW                &to 6                       &lt 6 BACKSPACE
-&mt LEFT_SHIFT DELETE  &kp LC(Z)            &kp LC(LA(X))           &mt LS(LEFT_WIN) LC(C)      &kp LC(V)                   &mt LC(LEFT_WIN) LA(B)    &kp LC(LA(N))       &kp LC(M)               &kp LEFT                        &lt 4 DOWN                  &kp RIGHT                   &mt LEFT_SHIFT TAB
+&mt LEFT_SHIFT DELETE  &kp LC(Z)            &kp LC(LA(X))           &mt LS(LEFT_WIN) LC(C)      &kp LC(V)                   &mt LC(LEFT_WIN) LA(B)    &kp LC(LA(N))       &kp LC(M)               &kp LEFT                        &lt 4 DOWN                  &kp RIGHT                   &mt LEFT_SHIFT LA(P)
                                                                     &mt LC(LEFT_ALT) BACKSPACE  &mkp LCLK                   &mkp RCLK                 &kp LEFT_WIN        &kp SPACE
                                                                                                 &kp ENTER                   &kp SPACE                 &kp ENTER
             >;
