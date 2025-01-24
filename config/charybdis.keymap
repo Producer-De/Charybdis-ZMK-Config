@@ -22,12 +22,12 @@
 
         underscore {
             bindings = <&kp UNDERSCORE>;
-            key-positions = <16 30>;
+            key-positions = <30 40>;
         };
 
         minus {
             bindings = <&kp MINUS>;
-            key-positions = <16 31>;
+            key-positions = <31 40>;
         };
 
         quote {
@@ -37,7 +37,7 @@
 
         doublequote {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <15 21>;
+            key-positions = <21 16>;
         };
 
         colon {
@@ -95,7 +95,7 @@
 &mt LEFT_ALT LA(TAB)   &kp LC(W)            &kp LC(D)               &kp LS(E)                   &kp R                       &kp LC(LA(T))             &kp G               &kp U                   &kp N                           &kp LA(L)                   &kp LC(P)                   &mt CAPSLOCK LC(LA(M))
 &mt LCTRL LC(LS(Z))    &kp LC(A)            &kp S                   &kp LC(LS(C))               &kp LC(F)                   &kp LS(F)                 &kp LC(LA(G))       &kp F2                  &kp QUESTION                    &kp UP_ARROW                &to 3                       &lt 3 BACKSPACE
 &mt LEFT_SHIFT DELETE  &lt 6 LC(Z)          &kp LC(LA(X))           &mt LS(LEFT_WIN) LC(C)      &kp LC(V)                   &mt LC(LEFT_WIN) LA(B)    &kp LC(LA(N))       &kp LC(M)               &kp LEFT                        &lt 4 DOWN                  &kp RIGHT                   &mt LEFT_SHIFT LA(P)
-                                                                    &lt 6 BACKSPACE             &mkp LCLK                   &mkp RCLK                 &mt LEFT_WIN LC(S)  &kp SPACE
+                                                                    &lt 6 BACKSPACE             &mkp LCLK                   &mkp RCLK                 &mt LWIN LC(S)      &kp SPACE
                                                                                                 &kp ENTER                   &kp SPACE                 &kp ENTER
             >;
         };
@@ -124,12 +124,12 @@
 
         Mouse {
             bindings = <
-&kp ESCAPE             &kp N1   &kp N2  &kp N3         &kp N4     &kp N5       &kp N6             &kp N7     &kp N8    &kp N9      &kp N0     &lt 6 DOT
-&mt LEFT_ALT LA(TAB)   &kp Q    &kp W   &kp E          &kp R      &kp T        &kp Y              &kp U      &kp I     &kp O       &kp P      &mt LEFT_ALT MINUS
-&mt LCTRL RIGHT_ALT    &kp A    &kp S   &kp D          &kp F      &kp G        &kp H              &kp J      &kp K     &kp L       &to 0      &lt 0 BACKSPACE
-&mt LEFT_SHIFT DELETE  &lt 6 Z  &kp X   &kp C          &kp V      &kp B        &kp N              &kp M      &kp LEFT  &lt 4 DOWN  &kp RIGHT  &mt LEFT_SHIFT UP_ARROW
-                                        &kp BACKSPACE  &mkp LCLK  &mkp RCLK    &mt LEFT_WIN PLUS  &kp SPACE
-                                                       &kp ENTER  &kp SPACE    &kp ENTER
+&kp ESCAPE             &kp N1   &kp N2  &kp N3           &kp N4     &kp N5       &kp N6             &kp N7     &kp N8    &kp N9      &kp N0     &mt LEFT_WIN TAB
+&mt LEFT_ALT LA(TAB)   &kp Q    &kp W   &kp E            &kp R      &kp T        &kp Y              &kp U      &kp I     &kp O       &kp P      &mt LEFT_ALT MINUS
+&mt LCTRL RIGHT_ALT    &kp A    &kp S   &kp D            &kp F      &kp G        &kp H              &kp J      &kp K     &kp L       &to 0      &lt 0 BACKSPACE
+&mt LEFT_SHIFT DELETE  &lt 6 Z  &kp X   &kp C            &kp V      &kp B        &kp N              &kp M      &kp LEFT  &lt 4 DOWN  &kp RIGHT  &mt LEFT_SHIFT UP_ARROW
+                                        &lt 6 BACKSPACE  &mkp LCLK  &mkp RCLK    &mt LEFT_WIN PLUS  &kp SPACE
+                                                         &kp ENTER  &kp SPACE    &kp ENTER
             >;
         };
 
