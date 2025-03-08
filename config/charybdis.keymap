@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     tapping-term-ms = <200>;
@@ -114,6 +115,51 @@
             bindings = <&bt BT_SEL 1>;
             key-positions = <37 13>;
         };
+
+        alt1 {
+            bindings = <&kp LA(NUMBER_1)>;
+            key-positions = <12 1>;
+        };
+
+        alt2 {
+            bindings = <&kp LA(NUMBER_2)>;
+            key-positions = <12 2>;
+        };
+
+        alt3 {
+            bindings = <&kp LA(NUMBER_3)>;
+            key-positions = <12 3>;
+        };
+
+        alt4 {
+            bindings = <&kp LA(NUMBER_4)>;
+            key-positions = <12 4>;
+        };
+
+        ctrlwin0 {
+            bindings = <&kp LC(LG(N0))>;
+            key-positions = <0 5>;
+        };
+
+        ctrlwin1 {
+            bindings = <&kp LC(LG(NUMBER_1))>;
+            key-positions = <1 5>;
+        };
+
+        ctrlwin2 {
+            bindings = <&kp LC(LG(NUMBER_2))>;
+            key-positions = <2 5>;
+        };
+
+        ctrlwin3 {
+            bindings = <&kp LC(LG(NUMBER_3))>;
+            key-positions = <3 5>;
+        };
+
+        ctrlwin4 {
+            bindings = <&kp LC(LG(NUMBER_4))>;
+            key-positions = <4 5>;
+        };
     };
 
     keymap {
@@ -125,7 +171,7 @@
 &mt LEFT_ALT LA(TAB)   &kp LC(W)            &kp LC(D)               &kp LS(E)                   &kp R                       &kp LC(LA(T))             &kp G               &kp U                   &kp N                           &kp LA(L)                   &kp LC(P)                   &mt CAPSLOCK LC(LA(M))
 &mt LCTRL LC(LS(Z))    &kp LC(A)            &kp S                   &kp LC(LS(C))               &kp LC(F)                   &kp LS(F)                 &kp LC(LA(G))       &kp F2                  &kp QUESTION                    &kp LA(P)                   &to 3                       &lt 3 BACKSPACE
 &mt LEFT_SHIFT DELETE  &lt 6 LC(Z)          &kp LC(LA(X))           &mt LS(LEFT_WIN) LC(C)      &kp LC(V)                   &mt LC(LEFT_WIN) LA(B)    &kp LC(LA(N))       &kp LC(M)               &kp LEFT                        &lt 4 DOWN                  &kp RIGHT                   &mt LEFT_SHIFT UP_ARROW
-                                                                    &lt 6 BACKSPACE             &mkp LCLK                   &mkp RCLK                 &mt LWIN TAB        &kp SPACE
+                                                                    &to 6                       &mkp LCLK                   &mkp RCLK                 &mt LWIN TAB        &kp SPACE
                                                                                                 &lt 7 ENTER                 &kp SPACE                 &kp ENTER
             >;
         };
