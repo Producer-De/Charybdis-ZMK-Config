@@ -160,6 +160,16 @@
             bindings = <&kp LC(LG(NUMBER_4))>;
             key-positions = <4 5>;
         };
+
+        ableton_to {
+            bindings = <&to 3>;
+            key-positions = <24 26>;
+        };
+
+        ableton_momentary {
+            bindings = <&mo 3>;
+            key-positions = <24 35>;
+        };
     };
 
     keymap {
@@ -200,12 +210,12 @@
 
         Ableton {
             bindings = <
-&mt NUMBER_3 ESCAPE   &trans     &trans         &trans           &kp LC(R)          &kp LC(LA(BACKSPACE))    &kp LC(LS(G))     &trans     &kp B             &kp H             &kp W             &kp LC(COMMA)
-&mt LEFT_ALT LA(TAB)  &kp Z      &kp LC(LS(W))  &kp LC(E)        &kp R              &kp LC(T)                &kp LC(G)         &kp LC(U)  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)
-&kp LEFT_CONTROL      &kp A      &kp C          &kp LC(D)        &kp LC(LS(LA(F)))  &kp LC(LS(T))            &kp N0            &kp LC(J)  &kp LS(TAB)       &kp LC(L)         &to 0             &lt 0 DELETE
-&mt LSHFT DELETE      &kp LC(Z)  &kp LC(X)      &kp LC(C)        &kp LC(V)          &kp X                    &kp LC(LS(M))     &kp M      &kp LEFT          &lt 7 DOWN        &kp RIGHT         &mt LEFT_SHIFT UP_ARROW
-                                                &lt 9 BACKSPACE  &mkp LCLK          &mkp RCLK                &mt LEFT_WIN TAB  &kp SPACE
-                                                                 &lt 10 ENTER       &kp SPACE                &kp ENTER
+&mt NUMBER_3 ESCAPE   &kp LS(LA(T))  &kp LC(LA(U))  &kp LC(LS(C))    &kp LC(R)          &kp LC(LA(BACKSPACE))    &kp LC(LS(G))     &kp LC(LA(O))  &kp B             &kp H             &kp W             &kp LC(COMMA)
+&mt LEFT_ALT LA(TAB)  &kp Z          &kp LC(LS(W))  &kp LC(E)        &kp R              &kp LC(T)                &kp LC(G)         &kp LC(U)      &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)
+&kp LEFT_CONTROL      &kp A          &kp C          &kp LC(D)        &kp LC(LS(LA(F)))  &kp LC(LS(T))            &kp N0            &kp LC(J)      &kp LS(TAB)       &kp LC(L)         &to 0             &lt 0 DELETE
+&mt LSHFT DELETE      &kp LC(Z)      &kp LC(X)      &kp LC(C)        &kp LC(V)          &kp X                    &kp LC(LS(M))     &kp M          &kp LEFT          &lt 7 DOWN        &kp RIGHT         &mt LEFT_SHIFT UP_ARROW
+                                                    &lt 9 BACKSPACE  &mkp LCLK          &mkp RCLK                &mt LEFT_WIN TAB  &kp SPACE
+                                                                     &lt 10 ENTER       &kp SPACE                &kp ENTER
             >;
         };
 
@@ -222,23 +232,23 @@
 
         Cubase {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &to 0   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
-                                &trans  &trans    &trans
+&mt N5 ESCAPE  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &to 0   &trans
+&trans         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                               &trans  &trans  &trans    &trans  &trans
+                                       &trans  &trans    &trans
             >;
         };
 
         Cubase_Momentary {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
-                                &trans  &trans    &trans
+&mt NUMBER_6 ESCAPE  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans               &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans               &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans               &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                     &trans  &trans  &trans    &trans  &trans
+                                             &trans  &trans    &trans
             >;
         };
 
@@ -269,7 +279,7 @@
 &kp F1        &kp F2        &kp F3        &kp F4            &kp F5            &kp F6              &kp F7           &kp F8           &kp F9           &kp F10       &kp F11       &kp F12
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp LC(N7)        &kp LC(N8)        &kp LC(N9)          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &bt BT_SEL 3  &bt BT_SEL 4  &kp PAGE_UP
 &out OUT_BLE  &out OUT_USB  &out OUT_TOG  &kp LC(NUMBER_4)  &kp LC(N5)        &kp LC(NUMBER_6)    &kp KP_NUMBER_4  &kp KP_N5        &kp KP_NUMBER_6  &kp KP_MINUS  &kp KP_DOT    &kp BACKSPACE
-&kp ESCAPE    &trans        &bt BT_CLR    &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_PLUS   &kp KP_EQUAL  &kp PAGE_DOWN
+&kp ESCAPE    &kp N9        &bt BT_CLR    &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_PLUS   &kp KP_EQUAL  &kp PAGE_DOWN
                                           &trans            &kp S             &kp B               &kp RCTRL        &kp KP_NUMBER_0
                                                             &kp T             &kp R               &kp ENTER
             >;
@@ -277,7 +287,7 @@
 
         layer_7 {
             bindings = <
-&kp ESCAPE         &trans  &trans  &trans  &trans  &trans    &trans        &trans        &trans        &trans     &trans     &kp DELETE
+&mt T ESCAPE       &trans  &trans  &trans  &trans  &trans    &trans        &trans        &trans        &trans     &trans     &kp DELETE
 &trans             &trans  &trans  &trans  &trans  &trans    &kp N7        &kp N8        &kp N9        &trans     &trans     &trans
 &kp RIGHT_CONTROL  &trans  &trans  &trans  &trans  &trans    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS  &kp DOT    &kp BACKSPACE
 &kp ESCAPE         &trans  &trans  &trans  &trans  &trans    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS   &kp EQUAL  &kp DELETE
