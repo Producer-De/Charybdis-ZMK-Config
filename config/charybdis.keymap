@@ -180,7 +180,7 @@
 &mt N0 ESCAPE          &mt LS(LCTRL) NUMBER_1  &mt LS(LEFT_ALT) NUMBER_2  &mt LS(LEFT_WIN) NUMBER_3  &mt LC(LEFT_ALT) NUMBER_4  &mt LC(LEFT_WIN) NUMBER_5    &mt LA(LEFT_WIN) NUMBER_6  &mt LS(LC(LEFT_ALT)) NUMBER_7  &mt LS(LC(LEFT_WIN)) NUMBER_8  &mt LS(LA(LEFT_WIN)) NUMBER_9  &mt LC(LA(LEFT_WIN)) NUMBER_0  &mt LS(LC(LA(LEFT_WIN))) DOT
 &mt LEFT_ALT LA(TAB)   &kp Q                   &kp W                      &kp E                      &kp R                      &kp T                        &kp Y                      &kp U                          &kp I                          &kp O                          &kp P                          &mt LEFT_ALT MINUS
 &mt LCTRL RIGHT_ALT    &kp A                   &kp S                      &kp D                      &kp F                      &kp G                        &kp H                      &kp J                          &kp K                          &kp L                          &to 1                          &lt 2 BACKSPACE
-&mt LEFT_SHIFT DELETE  &lt 9 Z                 &kp X                      &kp C                      &kp V                      &kp B                        &kp N                      &kp M                          &kp LEFT                       &lt 4 DOWN                     &kp RIGHT                      &mt LEFT_SHIFT UP_ARROW
+&mt LEFT_SHIFT DELETE  &lt 9 Z                 &kp X                      &kp C                      &kp V                      &kp B                        &kp N                      &kp M                          &kp LEFT                       &lt 8 DOWN                     &kp RIGHT                      &mt LEFT_SHIFT UP_ARROW
                                                                           &lt 9 BACKSPACE            &mkp LCLK                  &mkp RCLK                    &mt LEFT_WIN PLUS          &kp SPACE
                                                                                                      &lt 10 ENTER               &kp SPACE                    &kp ENTER
             >;
@@ -191,7 +191,7 @@
 &mt NUMBER_1 ESCAPE    &mt LS(LCTRL) LA(R)  &mt LS(LEFT_ALT) LC(T)  &mt LS(LEFT_WIN) LC(LA(V))  &mt LC(LEFT_ALT) LC(LA(R))  &mt LC(LEFT_WIN) LC(B)    &mt LA(LEFT_WIN) V  &mt LS(LC(LEFT_ALT)) P  &mt LS(LC(LEFT_WIN)) LC(LA(M))  &mt LS(LA(LEFT_WIN)) LA(G)  &mt LC(LA(LEFT_WIN)) LA(S)  &mt LS(LC(LA(LEFT_WIN))) LA(X)
 &mt LEFT_ALT LA(TAB)   &kp LC(W)            &kp LC(D)               &kp LS(E)                   &kp R                       &kp LC(LA(T))             &kp G               &kp U                   &kp N                           &kp LA(L)                   &kp LC(P)                   &mt CAPSLOCK LC(LA(M))
 &mt LCTRL LC(LS(Z))    &kp LC(A)            &kp S                   &kp LC(LS(C))               &kp LC(F)                   &kp LS(F)                 &kp LC(LA(G))       &kp F2                  &kp QUESTION                    &kp LA(P)                   &to 0                       &lt 0 BACKSPACE
-&mt LEFT_SHIFT DELETE  &lt 9 LC(Z)          &kp LC(LA(X))           &mt LS(LEFT_WIN) LC(C)      &kp LC(V)                   &mt LC(LEFT_WIN) LA(B)    &kp LC(LA(N))       &kp LC(M)               &kp LEFT                        &lt 4 DOWN                  &kp RIGHT                   &mt LEFT_SHIFT UP_ARROW
+&mt LEFT_SHIFT DELETE  &lt 9 LC(Z)          &kp LC(LA(X))           &mt LS(LEFT_WIN) LC(C)      &kp LC(V)                   &mt LC(LEFT_WIN) LA(B)    &kp LC(LA(N))       &kp LC(M)               &kp LEFT                        &lt 8 DOWN                  &kp RIGHT                   &mt LEFT_SHIFT UP_ARROW
                                                                     &lt 9 BACKSPACE             &mkp LCLK                   &mkp RCLK                 &mt LWIN TAB        &kp SPACE
                                                                                                 &lt 10 ENTER                &kp SPACE                 &kp ENTER
             >;
@@ -202,7 +202,7 @@
 &mt NUMBER_2 ESCAPE    &mt LS(LCTRL) LA(R)  &mt LS(LEFT_ALT) LC(T)  &mt LS(LEFT_WIN) LC(LA(V))  &mt LC(LEFT_ALT) LC(LA(R))  &mt LC(LEFT_WIN) LC(B)    &mt LA(LEFT_WIN) V  &mt LS(LC(LEFT_ALT)) P  &mt LS(LC(LEFT_WIN)) LC(LA(M))  &mt LS(LA(LEFT_WIN)) LA(G)  &mt LC(LA(LEFT_WIN)) LA(S)  &mt LS(LC(LA(LEFT_WIN))) LA(X)
 &mt LEFT_ALT LA(TAB)   &kp LC(W)            &kp LC(D)               &kp LS(E)                   &kp R                       &kp LC(LA(T))             &kp G               &kp U                   &kp N                           &kp LA(L)                   &kp LC(P)                   &mt CAPSLOCK LC(LA(M))
 &mt LCTRL LC(LS(Z))    &kp LC(A)            &kp S                   &kp LC(LS(C))               &kp LC(F)                   &kp LS(F)                 &kp LC(LA(G))       &kp F2                  &kp QUESTION                    &kp LA(P)                   &trans                      &trans
-&mt LEFT_SHIFT DELETE  &lt 9 LC(Z)          &kp LC(LA(X))           &mt LS(LEFT_WIN) LC(C)      &kp LC(V)                   &mt LC(LEFT_WIN) LA(B)    &kp LC(LA(N))       &kp LC(M)               &kp LEFT                        &lt 4 DOWN                  &kp RIGHT                   &mt LEFT_SHIFT UP_ARROW
+&mt LEFT_SHIFT DELETE  &lt 9 LC(Z)          &kp LC(LA(X))           &mt LS(LEFT_WIN) LC(C)      &kp LC(V)                   &mt LC(LEFT_WIN) LA(B)    &kp LC(LA(N))       &kp LC(M)               &kp LEFT                        &lt 8 DOWN                  &kp RIGHT                   &mt LEFT_SHIFT UP_ARROW
                                                                     &lt 9 BACKSPACE             &mkp LCLK                   &mkp RCLK                 &mt LWIN TAB        &kp SPACE
                                                                                                 &lt 10 ENTER                &kp SPACE                 &kp ENTER
             >;
@@ -213,20 +213,9 @@
 &mt NUMBER_3 ESCAPE   &kp LS(LA(T))  &kp LC(LA(U))  &kp LC(LS(C))    &kp LC(R)          &kp LC(LA(BACKSPACE))    &kp LC(LS(G))     &kp LC(LA(O))  &kp B             &kp H             &kp W             &kp LC(COMMA)
 &mt LEFT_ALT LA(TAB)  &kp Z          &kp LC(LS(W))  &kp LC(E)        &kp R              &kp LC(T)                &kp LC(G)         &kp LC(U)      &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)
 &kp LEFT_CONTROL      &kp A          &kp C          &kp LC(D)        &kp LC(LS(LA(F)))  &kp LC(LS(T))            &kp N0            &kp LC(J)      &kp LS(TAB)       &kp LC(L)         &to 0             &lt 0 BACKSPACE
-&mt LSHFT DELETE      &kp LC(Z)      &kp LC(X)      &kp LC(C)        &kp LC(V)          &kp X                    &kp LC(LS(M))     &kp M          &kp LEFT          &lt 4 DOWN        &kp RIGHT         &mt LEFT_SHIFT UP_ARROW
+&mt LSHFT DELETE      &kp LC(Z)      &kp LC(X)      &kp LC(C)        &kp LC(V)          &kp X                    &kp LC(LS(M))     &kp M          &kp LEFT          &lt 8 DOWN        &kp RIGHT         &mt LEFT_SHIFT UP_ARROW
                                                     &lt 9 BACKSPACE  &mkp LCLK          &mkp RCLK                &mt LEFT_WIN TAB  &kp SPACE
                                                                      &lt 10 ENTER       &kp SPACE                &kp ENTER
-            >;
-        };
-
-        Scroll_Only {
-            bindings = <
-&trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans     &mkp MCLK  &trans     &trans       &trans     &trans     &mkp MCLK  &trans     &trans  &trans
-&trans  &trans  &mkp RCLK  &trans     &mkp LCLK  &trans       &trans     &mkp LCLK  &trans     &mkp RCLK  &trans  &trans
-                           &trans     &mkp LCLK  &mkp RCLK    &mkp RCLK  &mkp LCLK
-                                      &trans     &trans       &trans
             >;
         };
 
@@ -260,6 +249,17 @@
 &trans               &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                                      &trans  &trans  &trans    &trans  &trans
                                              &trans  &trans    &trans
+            >;
+        };
+
+        Scroll_Only {
+            bindings = <
+&trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans     &mkp MCLK  &trans     &trans       &trans     &trans     &mkp MCLK  &trans     &trans  &trans
+&trans  &trans  &mkp RCLK  &trans     &mkp LCLK  &trans       &trans     &mkp LCLK  &trans     &mkp RCLK  &trans  &trans
+                           &trans     &mkp LCLK  &mkp RCLK    &mkp RCLK  &mkp LCLK
+                                      &trans     &trans       &trans
             >;
         };
 
