@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     tapping-term-ms = <200>;
@@ -244,12 +245,12 @@
             >;
         };
 
-        layer_12 {
+        cubase {
             bindings = <
-&kp N5  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans      &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans      &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans      &to 0   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &lt 4 DOWN  &trans  &trans
+&kp N5  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &to 0       &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mo 4   &to 4   &lt 4 DOWN  &trans
                         &trans  &trans  &trans    &trans  &trans
                                 &trans  &trans    &trans
             >;
@@ -257,10 +258,10 @@
 
         protools {
             bindings = <
-&kp NUMBER_6  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans      &trans  &trans
-&trans        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans      &trans  &trans
-&trans        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans      &to 0   &trans
-&trans        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &lt 4 DOWN  &trans  &trans
+&kp NUMBER_6  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans      &trans
+&trans        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans      &trans
+&trans        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &to 0       &trans
+&trans        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mo 4   &to 4   &lt 4 DOWN  &trans
                               &trans  &trans  &trans    &trans  &trans
                                       &trans  &trans    &trans
             >;
