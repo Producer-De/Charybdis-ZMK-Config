@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     tapping-term-ms = <200>;
@@ -67,7 +68,7 @@
 
         greaterthan {
             bindings = <&kp GREATER_THAN>;
-            key-positions = <40 45>;
+            key-positions = <40 46>;
         };
 
         altf4 {
@@ -182,12 +183,12 @@
 
         quote {
             bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <20 40>;
+            key-positions = <53 41>;
         };
 
         double_quote {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <40 21>;
+            key-positions = <40 53>;
         };
     };
 
