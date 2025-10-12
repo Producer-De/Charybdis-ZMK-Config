@@ -2,12 +2,23 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 
 &lt {
-    tapping-term-ms = <200>;
-    flavor = "balanced";
-    quick-tap-ms = <150>;
+    tapping-term-ms = <135>;        // 200 → 135로 줄임 (더 빠르게)
+    flavor = "hold-preferred";      // balanced → hold-preferred
+    quick-tap-ms = <0>;             // 150 → 0으로 (즉시 반응)
+};
+
+&lt {
+    tapping-term-ms = <135>;
+    flavor = "hold-preferred";
+    quick-tap-ms = <0>;
+};
+
+&mt {
+    tapping-term-ms = <135>;
+    flavor = "hold-preferred";
+    quick-tap-ms = <0>;
 };
 
 / {
