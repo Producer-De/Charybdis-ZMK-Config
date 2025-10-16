@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     tapping-term-ms = <135>;        // 200 → 135로 줄임 (더 빠르게)
@@ -239,19 +240,19 @@
 &kp TAB           &kp Q         &kp W         &kp E         &kp R         &kp T        &kp Y             &kp U          &kp I     &kp O       &kp P      &kp LC(NUMBER_4)
 &kp LEFT_CONTROL  &kp A         &kp S         &kp D         &kp F         &kp G        &kp H             &kp J          &kp K     &kp L       &to 0      &lt 8 BACKSPACE
 &kp LSHFT         &kp Z         &kp X         &kp C         &kp V         &kp B        &kp N             &kp M          &kp LEFT  &lt 5 DOWN  &kp RIGHT  &mt LEFT_SHIFT UP_ARROW
-                                              &kp H         &mkp LCLK     &mkp RCLK    &mt LEFT_WIN TAB  &kp SPACE
+                                              &mo 3         &mkp LCLK     &mkp RCLK    &mt LEFT_WIN TAB  &kp SPACE
                                                             &kp LEFT_ALT  &kp SPACE    &kp ENTER
             >;
         };
 
         Cubase {
             bindings = <
-&kp ESCAPE             &trans  &trans  &trans           &trans       &trans       &trans        &trans        &trans        &trans      &trans     &trans
-&mt LEFT_ALT LA(TAB)   &trans  &trans  &trans           &trans       &trans       &kp N7        &kp N8        &kp N9        &trans      &trans     &trans
-&mt LCTRL RIGHT_ALT    &trans  &trans  &trans           &trans       &trans       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans      &to 0      &lt 8 BACKSPACE
-&mt LEFT_SHIFT DELETE  &trans  &trans  &trans           &trans       &trans       &kp NUMBER_1  &kp NUMBER_2  &kp LEFT      &lt 5 DOWN  &kp RIGHT  &mt LEFT_SHIFT UP_ARROW
-                                       &lt 6 BACKSPACE  &mkp LCLK    &mkp RCLK    &trans        &kp SPACE
-                                                        &lt 7 ENTER  &kp SPACE    &kp ENTER
+&kp ESCAPE            &trans            &trans  &trans            &trans       &trans       &trans        &trans        &trans        &trans      &trans     &trans
+&mt LEFT_ALT LA(TAB)  &trans            &trans  &kp LC(NUMBER_6)  &kp H        &kp GRAVE    &kp N7        &kp N8        &kp N9        &trans      &trans     &trans
+&mt LCTRL RIGHT_ALT   &trans            &trans  &trans            &trans       &trans       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans      &to 0      &lt 8 BACKSPACE
+&kp GRAVE             &kp LC(NUMBER_6)  &kp H   &kp NUMBER_6      &kp N7       &kp N8       &kp NUMBER_1  &kp NUMBER_2  &kp LEFT      &lt 5 DOWN  &kp RIGHT  &mt LEFT_SHIFT UP_ARROW
+                                                &lt 6 BACKSPACE   &mkp LCLK    &mkp RCLK    &trans        &kp SPACE
+                                                                  &lt 7 ENTER  &kp SPACE    &kp ENTER
             >;
         };
 
