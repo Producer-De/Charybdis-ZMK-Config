@@ -5,9 +5,9 @@
 #include <dt-bindings/zmk/outputs.h>
 
 &lt {
-    tapping-term-ms = <135>;        // 200 → 135로 줄임 (더 빠르게)
+    tapping-term-ms = <150>;        // 200 → 135로 줄임 (더 빠르게)
     flavor = "balanced";      // balanced → hold-preferred
-    quick-tap-ms = <50>;             // 150 → 0으로 (즉시 반응)
+    quick-tap-ms = <100>;             // 150 → 0으로 (즉시 반응)
 };
 
 &lt {
